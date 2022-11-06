@@ -1,4 +1,22 @@
 //variables
+var a;  
+var A; // neviem co to je??
+var danielPeter;
+
+var a; 
+a = 10;
+var b = 20;
+var sum = a + b;
+console.log(sum);
+
+
+// var a, b, sum;
+// a = 20;
+// b = 10;
+// sum = a + b;
+
+/////
+
 let nameOne = 'peter';
 console.log(nameOne);
 
@@ -18,6 +36,29 @@ let isApproved = true; //boolean
 let firstName = undefined; //undefined variable 
 let date = null; //null object 
 
+// VAR LET CONST
+// beter use let const, pretoze tu nemozeme menit premennu
+
+// ok
+if (true) {
+    var varVariable = 'this is True'
+}
+
+console.log(varVariable)
+
+// error 
+// if (true) {
+//     let letVariable = 'this is True'
+// }
+// console.log(letVariable)
+
+// error 
+// if (true) {
+//     const constVariable = 'this is True'
+// }
+// console.log(constVariable)
+
+
 // Objects
 let girl = {
     name: 'Emily',
@@ -27,6 +68,37 @@ let girl = {
 girl.name = 'Peter';
 girl['name'] = 'Sam';
 console.log(girl);
+
+let nameFour = 'Peter';
+console.log(nameFour.length);
+
+let updateAge = function(age) {
+    return ++age;
+}
+
+let person = new Object();
+
+person.name = 'Peter';
+person.eyeColor = 'Blue';
+person.age = 36;
+person.updateAge = function() {
+    return ++person.age;
+}
+console.log(person.age);
+person.updateAge();
+console.log(person.age);
+
+console.log(person.name);
+
+let personOne = {
+    name: "Daniel",
+    eyeColor: "Blue",
+    age: 27,
+    updateAge: function(){
+        return ++person.age;
+    }
+}
+console.log(personOne);
 
 // Arrays 
 let items = ['color', 'paintbrush', 'plate'];
@@ -64,17 +136,17 @@ while (i < 5){
 }
 
 // Do ...while loop
-let a = 0;
+let ab = 0;
 do{
-    console.log('number is ' + a);
-    a++;
+    console.log('number is ' + ab);
+    ab++;
 }
-while(a<6)
+while(ab<6)
 
 // For loop
-let b;
-for(let b = 0; b < 7; b++){
-    console.log('number is ' + a);
+let ba;
+for(let ba = 0; ba < 7; ba++){
+    console.log('number is ' + ba);
 }
 
 // Switch statemen 
